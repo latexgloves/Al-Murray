@@ -76,6 +76,7 @@ allowing for attacks to the firebase.
 * Add administration module, allowing for administrators to add events and manuall edit user's points and ranks
 * Add the Al Murray Penal Code to the information screen
 * Replace placeholder assets
+* Modify the layout of the profile module to make each cell clearer
 
 ## Known Issues:
 * The Calendar module will frequently not display events even though events exist
