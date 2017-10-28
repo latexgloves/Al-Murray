@@ -36,13 +36,13 @@ which can not be set by the end user.
 
 ### So far this app includes 4 accessible modules
 
-*Calendar
+* Calendar
 
-*More
+* More
 
-*Profile
+* Profile
 
-*Information
+* Information
 
 > These modules are subject to change
 
@@ -60,9 +60,8 @@ The Information module displays information such as the 10 Commandments and defi
 
 ### So far the app includes 2 inaccessible modules:
 
-*Signup
-
-*Chat
+* Signup
+* Chat
 
 The signup module allows adminstrators to create users
 
@@ -73,23 +72,15 @@ allowing for attacks to the firebase.
 # Todo and known issues
 
 ## Todo:
-*Finish chat module
-
-*Add administration module, allowing for administrators to add events and manuall edit user's points and ranks
-
-*Add the Al Murray Penal Code to the information screen
-
-*Replace placeholder assets
+* Finish chat module
+* Add administration module, allowing for administrators to add events and manuall edit user's points and ranks
+* Add the Al Murray Penal Code to the information screen
+* Replace placeholder assets
 
 ## Known Issues:
-*The Calendar module will frequently not display events even though events exist
-
-*The Calendar module will display the 'no events' message underneath the actual events
-
-*Opening a group chat causes the application to crash
-
-*Messages broadcast to chats display incorrectly
-
-*The chat module will randomly become accessible depending on time/date and device connectivity issues
-
-*Users without an admin key can not log on.
+* The Calendar module will frequently not display events even though events exist
+* The Calendar module will display the 'no events' message underneath the actual events
+* Opening a group chat causes the application to crash
+* Messages broadcast to chats display incorrectly
+* The chat module will randomly become accessible depending on time/date and device connectivity issues
+* Users without an admin key can not log on.
