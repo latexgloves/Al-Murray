@@ -1,5 +1,7 @@
 # Al Murray Portal
 
+# WE LOVE U MURRAY, WE DO
+
 Open source code for the Al Murray Portal app, currently containing iOS files only. This repository contains the full and most recent versions of the iOS app.
 
 ## Installation
