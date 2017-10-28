@@ -84,3 +84,4 @@ allowing for attacks to the firebase.
 * Messages broadcast to chats display incorrectly
 * The chat module will randomly become accessible depending on time/date and device connectivity issues
 * Users without an admin key can not log on.
+* In the profile module, the positivity rank is not displayed, and the labels are in the wrong order
