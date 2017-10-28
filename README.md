@@ -34,12 +34,7 @@ which can not be set by the end user.
 
 ## Modules
 
-###So far this app includes 4 accessible modules:
-
-*Calendar
-*Requests
-*Profile
-*Information
+### So far this app includes 4 accessible modules
 
 > These modules are subject to change
 
@@ -55,7 +50,7 @@ the screen a logged in user will open to.
 
 The Information module displays information such as the 10 Commandments and definitons of key terms.
 
-###So far the app includes 2 inaccessible modules:
+### So far the app includes 2 inaccessible modules:
 
 *Signup
 *Chat
@@ -66,15 +61,15 @@ The Chat module allows for peer-peer chat, as well as group chats. The language 
 english, and can be broadcast to. The chat module is inaccessible at this time due to it not being finished, and in its current state
 allowing for attacks to the firebase.
 
-#Todo and known issues
+# Todo and known issues
 
-##Todo:
+## Todo:
 *Finish chat module
 *Add administration module, allowing for administrators to add events and manuall edit user's points and ranks
 *Add the Al Murray Penal Code to the information screen
 *Replace placeholder assets
 
-##Known Issues:
+## Known Issues:
 *The Calendar module will frequently not display events even though events exist
 *The Calendar module will display the 'no events' message underneath the actual events
 *Opening a group chat causes the application to crash
