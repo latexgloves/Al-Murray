@@ -1,0 +1,6 @@
+framework module DWImagePicker_Swift3 {
+  umbrella header "DWImagePicker-Swift3-umbrella.h"
+
+  export *
+  module * { export * }
+}
