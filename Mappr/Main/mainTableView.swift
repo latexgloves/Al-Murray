@@ -12,9 +12,9 @@ import SDWebImage
 
 class mainTableView: UITableViewController {
     
+    @IBOutlet weak var amigoRankDisplay: UILabel!
     @IBOutlet weak var amigoPoints: UILabel!
     @IBOutlet weak var positiveDisplay: UILabel!
-    @IBOutlet weak var amigoRankDisplay: UILabel!
     @IBOutlet weak var pRankDisplay: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
     
@@ -82,7 +82,7 @@ class mainTableView: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 4
+        return 5
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
