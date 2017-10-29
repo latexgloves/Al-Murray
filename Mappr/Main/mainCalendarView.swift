@@ -125,7 +125,7 @@ class mainCalendarView: UITableViewController {
                 eventToShow.colour = eventI
                 self.eventList.append(eventToShow)
             }
-            //self.tableview.reloadData()
+            self.tableview.reloadData()
         }
         ref.removeAllObservers()
         refreshControl?.endRefreshing()
