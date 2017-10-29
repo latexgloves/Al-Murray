@@ -20,13 +20,11 @@ class mainView: UIViewController, UIScrollViewDelegate{
         
         
         userName.title = logoStatic.userStats.uName
-      
-        SBDMain.connect(withUserId: "tomknighton") { (user, error) in
-            if error != nil {
-                print(error?.localizedDescription)
-                
-            }
-        }
+        
+        SBDMain.initWithApplicationId("B6A18EB8-11B6-49A3-A462-9D7242C465C5")
+        SBDMain.connect(withUserId: "tomknighton", completionHandler: { (user, error) in
+            
+        })
 
         
         
