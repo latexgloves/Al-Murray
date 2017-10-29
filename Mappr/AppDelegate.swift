@@ -23,9 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        IQKeyboardManager.sharedManager().disabledDistanceHandlingClasses = [mainView.self, mainScrollView.self, infoView.self, loginView.self]
 //        IQKeyboardManager.sharedManager().enable = false
         
-        SBDMain.initWithApplicationId("B6A18EB8-11B6-49A3-A462-9D7242C465C5")
-        SBDOptions.setUseMemberAsMessageSender(true)
         FirebaseApp.configure()
+        SBDMain.initWithApplicationId("B6A18EB8-11B6-49A3-A462-9D7242C465C5")
+
+        
+        
+        
         return true
     }
 
