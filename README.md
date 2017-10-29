@@ -81,7 +81,7 @@ allowing for attacks to the firebase.
 * Modify the layout of the profile module to make each cell clearer
 
 ## Known Issues:
-* The Calendar module will frequently not display events even though events exist
+~~* The Calendar module will frequently not display events even though events exist~~
 * The Calendar module will display the 'no events' message underneath the actual events
 * Opening a group chat causes the application to crash
 * Messages broadcast to chats display incorrectly
