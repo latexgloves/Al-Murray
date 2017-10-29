@@ -71,6 +71,11 @@ The Chat module allows for peer-peer chat, as well as group chats. The language 
 english, and can be broadcast to. The chat module is inaccessible at this time due to it not being finished, and in its current state
 allowing for attacks to the firebase.
 
+# Most recent updates:
+* Made each cell clearer in the Profile module
+* Started work on open channels, app now authenticates with chat login.
+> Only user able to log into chat is admin
+
 # Todo and known issues
 
 ## Todo:
