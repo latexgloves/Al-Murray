@@ -469,14 +469,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MELTING OF THE TREES - 31/12/17" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="PXf-l5-6g6">
-                                            <rect key="frame" x="8" y="8" width="1008" height="43"/>
+                                            <rect key="frame" x="8" y="8" width="1008" height="41"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <fontDescription key="fontDescription" name="Asgalt-Regular" family="Asgalt" pointSize="50"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info about the event" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="99" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="DnX-c3-uTF">
-                                            <rect key="frame" x="8" y="61" width="1008" height="128"/>
+                                            <rect key="frame" x="8" y="61" width="1008" height="126"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <fontDescription key="fontDescription" name="Asgalt-Regular" family="Asgalt" pointSize="40"/>
                                             <nil key="textColor"/>
@@ -735,26 +735,112 @@
             </objects>
             <point key="canvasLocation" x="3699.375" y="-116.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat-->
         <scene sceneID="qjO-J2-gWQ">
             <objects>
-                <viewController id="FTB-Ht-rPl" sceneMemberID="viewController">
+                <viewController id="FTB-Ht-rPl" customClass="mainChat" customModule="Mappr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eLR-ar-Mtr">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backLight" translatesAutoresizingMaskIntoConstraints="NO" id="mbV-Cx-P2n">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backLight" translatesAutoresizingMaskIntoConstraints="NO" id="mbV-Cx-P2n">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XC6-0L-CCR">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                                <items>
+                                    <navigationItem title="CHAT" id="SAm-CI-Gqu"/>
+                                </items>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y5l-Pw-p9P">
+                                <rect key="frame" x="404.5" y="124" width="215" height="29"/>
+                                <segments>
+                                    <segment title="Chats"/>
+                                    <segment title="Open Channels"/>
+                                </segments>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTS-fF-bSv">
+                                <rect key="frame" x="0.0" y="160" width="1024" height="1157"/>
+                                <connections>
+                                    <segue destination="56p-xx-R8p" kind="embed" id="cEd-oF-9A1"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XC6-0L-CCR" firstAttribute="top" secondItem="WP5-ex-Q2Y" secondAttribute="top" id="8Sm-sk-90a"/>
+                            <constraint firstItem="RTS-fF-bSv" firstAttribute="bottom" secondItem="WP5-ex-Q2Y" secondAttribute="bottom" id="CmG-05-2wU"/>
+                            <constraint firstItem="XC6-0L-CCR" firstAttribute="trailing" secondItem="RTS-fF-bSv" secondAttribute="trailing" id="DN4-TG-P5c"/>
+                            <constraint firstItem="XC6-0L-CCR" firstAttribute="centerX" secondItem="y5l-Pw-p9P" secondAttribute="centerX" id="Esh-xd-MiY"/>
+                            <constraint firstItem="y5l-Pw-p9P" firstAttribute="top" secondItem="XC6-0L-CCR" secondAttribute="bottom" constant="60" id="H1k-oF-mWR"/>
+                            <constraint firstItem="mbV-Cx-P2n" firstAttribute="leading" secondItem="XC6-0L-CCR" secondAttribute="leading" id="OMO-9X-qa4"/>
+                            <constraint firstAttribute="trailing" secondItem="mbV-Cx-P2n" secondAttribute="trailing" id="WVG-OU-3HB"/>
+                            <constraint firstItem="mbV-Cx-P2n" firstAttribute="top" secondItem="eLR-ar-Mtr" secondAttribute="top" id="YSZ-ws-DbG"/>
+                            <constraint firstItem="XC6-0L-CCR" firstAttribute="leading" secondItem="RTS-fF-bSv" secondAttribute="leading" id="dNW-8c-c52"/>
+                            <constraint firstItem="mbV-Cx-P2n" firstAttribute="leading" secondItem="eLR-ar-Mtr" secondAttribute="leading" id="fiR-Hq-Hlu"/>
+                            <constraint firstItem="RTS-fF-bSv" firstAttribute="top" secondItem="y5l-Pw-p9P" secondAttribute="bottom" constant="8" symbolic="YES" id="hOf-oI-EQc"/>
+                            <constraint firstAttribute="bottom" secondItem="mbV-Cx-P2n" secondAttribute="bottom" id="jM0-fF-w2X"/>
+                            <constraint firstItem="mbV-Cx-P2n" firstAttribute="trailing" secondItem="RTS-fF-bSv" secondAttribute="trailing" id="zPe-Kh-XtS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WP5-ex-Q2Y"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Chat" image="messages" id="sck-VU-Amn">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="messagesFilled"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="usernameNav" destination="SAm-CI-Gqu" id="gZB-sZ-Dht"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RW8-1d-0V0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4328" y="-117"/>
+            <point key="canvasLocation" x="4651" y="-322"/>
+        </scene>
+        <!--Main Channel Table-->
+        <scene sceneID="mRG-6j-gbO">
+            <objects>
+                <tableViewController id="56p-xx-R8p" customClass="mainChannelTable" customModule="Mappr" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XMh-qa-8e1">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1157"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="wym-KS-HQJ" customClass="channelCell" customModule="Mappr" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wym-KS-HQJ" id="MWh-Wp-8fh">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LaX-yc-Szk">
+                                            <rect key="frame" x="8" y="9" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Channel Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt6-ec-GqO">
+                                            <rect key="frame" x="96" y="8" width="157" height="81"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="Asgalt-Regular" family="Asgalt" pointSize="40"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="channelImage" destination="LaX-yc-Szk" id="rav-fC-zyO"/>
+                                    <outlet property="channelName" destination="Nt6-ec-GqO" id="NDN-wa-YOu"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="56p-xx-R8p" id="FuN-0B-wgl"/>
+                            <outlet property="delegate" destination="56p-xx-R8p" id="mXV-IE-uQC"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOV-9y-8qs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5260.546875" y="-277.37920937042458"/>
         </scene>
         <!--Main Table View-->
         <scene sceneID="vFa-f0-80X">
@@ -1135,6 +1221,7 @@
                         <segue destination="Xm5-Wh-lcl" kind="relationship" relationship="viewControllers" id="br6-sw-OMT"/>
                         <segue destination="nuL-I4-j7Y" kind="relationship" relationship="viewControllers" id="Hbi-zh-8sz"/>
                         <segue destination="0tK-qx-AZp" kind="relationship" relationship="viewControllers" id="lNt-UP-DCq"/>
+                        <segue destination="FTB-Ht-rPl" kind="relationship" relationship="viewControllers" id="1tg-Ru-QVR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cb4-xU-U5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1150,6 +1237,8 @@
         <image name="information" width="25" height="25"/>
         <image name="informationFilled" width="25" height="25"/>
         <image name="logostatic" width="960" height="540"/>
+        <image name="messages" width="25" height="25"/>
+        <image name="messagesFilled" width="25" height="25"/>
         <image name="more" width="25" height="25"/>
         <image name="moreFilled" width="25" height="25"/>
         <image name="profile" width="25" height="25"/>
