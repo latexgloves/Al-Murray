@@ -802,14 +802,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRg-Mk-eR3">
-                                                    <rect key="frame" x="8" y="8" width="1008" height="105"/>
+                                                    <rect key="frame" x="8" y="8" width="1008" height="77"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="Asgalt-Regular" family="Asgalt" pointSize="90"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AMIGO POINTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="6Xr-tD-H30">
-                                                    <rect key="frame" x="8" y="121" width="1008" height="71"/>
+                                                    <rect key="frame" x="8" y="93" width="1008" height="71"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="Asgalt-Regular" family="Asgalt" pointSize="90"/>
                                                     <nil key="textColor"/>
@@ -831,14 +831,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHQ-Rn-wTM">
-                                                    <rect key="frame" x="16" y="8" width="1008" height="105"/>
+                                                    <rect key="frame" x="16" y="8" width="1008" height="87"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="Asgalt-Regular" family="Asgalt" pointSize="90"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="POSITVITY POINTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="iyw-4X-WUN">
-                                                    <rect key="frame" x="16" y="121" width="1008" height="73"/>
+                                                    <rect key="frame" x="16" y="103" width="1008" height="73"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="Asgalt-Regular" family="Asgalt" pointSize="90"/>
                                                     <nil key="textColor"/>
@@ -916,7 +916,7 @@
                     </tableView>
                     <connections>
                         <outlet property="amigoPoints" destination="IRg-Mk-eR3" id="mIn-Cz-fDe"/>
-                        <outlet property="amigoRankDisplay" destination="3MD-UF-hdD" id="fT2-qq-Oem"/>
+                        <outlet property="amigoRankDisplay" destination="3ez-9n-Fjq" id="iCa-Xy-irA"/>
                         <outlet property="pRankDisplay" destination="3MD-UF-hdD" id="7Pe-UI-M15"/>
                         <outlet property="positiveDisplay" destination="KHQ-Rn-wTM" id="hTs-mD-7SM"/>
                         <outlet property="profileImage" destination="1VY-Mc-pLT" id="to6-OQ-OlK"/>
